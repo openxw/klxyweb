@@ -11,6 +11,7 @@ class ExampleController extends AdminController
 {
     /**
      * Title for current resource.
+     *当前资源的标题。
      *
      * @var string
      */
@@ -18,6 +19,7 @@ class ExampleController extends AdminController
 
     /**
      * Make a grid builder.
+      *做一个网格生成器。
      *
      * @return Grid
      */
@@ -34,6 +36,7 @@ class ExampleController extends AdminController
 
     /**
      * Make a show builder.
+     *做一个展示生成器。
      *
      * @param mixed   $id
      * @return Show
@@ -51,6 +54,7 @@ class ExampleController extends AdminController
 
     /**
      * Make a form builder.
+     *创建一个表单生成器
      *
      * @return Form
      */
