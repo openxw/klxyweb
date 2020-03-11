@@ -15,18 +15,18 @@ CREATE TABLE `users` (
   UNIQUE KEY `users_email_unique` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
 ```
-对应的数据模型为文件 `App\User.php`
+对应的数据模型为文件 `App\Models\User.php`
 
 `laravel-admin`可以通过使用以下几步来快速生成`users`表的`CURD`操作页面：
 
 ## 添加路由器
 
-使用下面的命令来创建一个对应`App\User`模型的路由器
+使用下面的命令来创建一个对应`App\Models\User`模型的路由器
 ```php
 php artisan admin:make UserController --model=App\\User
 
 // 在windows系统中
-php artisan admin:make UserController --model=App\User
+php artisan admin:make UserController --model=App\Models\User
 ```
 
 上面的命令会创建路由器文件`app/Admin/Controllers/UserController.php`.
